@@ -1,4 +1,5 @@
 import React from 'react';
+import TickerSymbol from '../TickerSymbol/TickerSymbol';
 
 import styles from './Day.module.scss';
 
@@ -17,21 +18,13 @@ const Day = (props) => {
     return list.join(' ');
   }
 
-  const renderTickerSymbol = (stocks) => {
-    return (
-      <div className={styles.symbolsWrapper}>
-        { stocks.map(stock => <span key={stock.symbol} className={styles.symbol}>{stock.symbol}</span>) }
-      </div>
-    );
-  }
-
   return (
     <span 
       key={day.date.toString()} 
       className={generateClassName()}
       onClick={() => select(day)}
     >
-      {props.stocks && props.stocks.length ? renderTickerSymbol(props.stocks) : null}
+      {props.stocks && props.stocks.length ? <TickerSymbol stocks={props.stocks}></TickerSymbol> : null}
       {day.number}
     </span>
   );

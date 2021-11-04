@@ -1,0 +1,22 @@
+.wrapper {
+  border-left: 1px solid #3f51b5;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 10px 0 20px;
+
+  .earningsCallDate {
+    font-weight: 800;
+  }
+}
+
+
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    font-size: 10px;
+    padding: 0 0 0 5px;
+  }
+}
