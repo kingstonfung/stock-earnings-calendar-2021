@@ -5,6 +5,17 @@ import stocksTimingFilter from '../../stocksTimingFilter';
 
 import styles from './Week.module.scss';
 
+/*
+This component is responsible for rendering 7 boxes in a row. It will receive
+props to know what is the beginning "date" of the week, and then we will simply
+loop the "Day" creation 7 times to create a week.
+
+"select" is a special prop, which is a reference to the function passed down from
+the parent <Calendar>. And then it will be relayed again down to Day eventually.
+By daisy-chanining down the props, we can let <Day> to trigger a function that was
+declared "from above", and allow the app to react accordingly.
+*/
+
 const generateDays = (date, month) => {
   let days = [];
   for (let i = 0; i < 7; i++) {

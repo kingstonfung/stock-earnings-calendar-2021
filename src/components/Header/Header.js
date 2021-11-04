@@ -5,6 +5,21 @@ import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import styles from './Header.module.scss';
 import moment from 'moment';
 
+/*
+This component is responsible for the calendar header UI.
+
+It is written as a class-type React component as an example, as we want to
+demostrate an internal state management setup. The state here we want
+to "hold on to" is simply the current viewing month (this.state.month).
+
+We will also utilize "moment" to help us format a friendlier name when displaying
+the text for the viewing month.
+
+We receive the prop "triggerMonthChange", which is a reference to the function
+pass down here from the parent. It will trigger the calendar to either
+move forward or backward and display the next or previous month.
+*/
+
 class Header extends React.Component {
   constructor(props) {
     super(props);

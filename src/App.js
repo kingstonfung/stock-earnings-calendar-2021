@@ -6,6 +6,18 @@ import StockEntry from './components/StockEntry';
 import stocksTimingFilter from './stocksTimingFilter';
 import performStockLookup from './performStockLookup';
 
+/*
+This is the root level of our entire application. As you can see the bottom return statement,
+we are simply returning (rendering) 2 components.
+
+Each of those components will be responsible for their sub-component's renderings, as well as
+passing information down the chain until the data reaches the destinated child component.
+
+We will also pass in references of "onDaySelected" & "onTickerSubmit" to <Calendar> and
+<UserInput> respectively. So when the user interacts with the search button or clicking on
+the calendar day box, it will trigger these 2 functions which allow the app to react accordingly.
+*/
+
 class App extends Component {
   state = {
     displayList: [],
