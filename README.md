@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 To see the finished project, go to https://bit.ly/react-stock-calendar
 
+To see the hiercharchy of the component setup, take a look at [AppHiercharchyExample.jsx](https://github.com/kingstonfung/stock-earnings-calendar-2021/blob/main/src/AppHiercharchyExample.jsx)
+
 ## First, install dependencies by running:
 
 ### `yarn`
