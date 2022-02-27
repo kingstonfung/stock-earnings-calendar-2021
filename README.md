@@ -4,6 +4,7 @@ To see the finished project, go to https://bit.ly/react-stock-calendar
 
 To see the hiercharchy of the component setup, take a look at [AppHiercharchyExample.jsx](https://github.com/kingstonfung/stock-earnings-calendar-2021/blob/main/src/AppHiercharchyExample.jsx)
 
+This app will make a simple network call to lookup the related stock symbole's earnings-call event date, and then plot them onto the calendar UI. No additional data is being collected on the server-side.
 ## First, install dependencies by running:
 
 ### `yarn`
